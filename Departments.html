@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departments – Arian Hospital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Grid item base style */
+    .department-box {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 25px 15px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      height: 100%;
+    }
+
+    /* Hover effect */
+    .department-box:hover {
+      background-color: #198754; /* Bootstrap green */
+      color: #fff;
+      transform: translateY(-5px);
+    }
+
+    /* Heading and paragraph spacing */
+    .department-box h5 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .department-box p {
+      font-size: 0.95rem;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle shadow-sm fixed-top">
+      <div class="container-fluid">
+         <a href="#" class="navbar-brand d-flex align-items-center" >
+            <div class="fw-bold  fs-3">
+               <img src="Arian_logo.png" alt="Arian hospital logo" width="100" height="100" class="logo">
+               <div class="small fw-bold text-primary">Arian Hospital</div>
+            </div>
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+         </button> 
+         
+         <div class="collapse navbar-collapse justify-content-end Roboto fw-bold  text-primary" 
+         id="main_nav">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a href="about.html" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+               <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+               <a href="Departments.html" class="nav-link">Our Departments</a>
+            </li>
+            <li class="nav-item">
+               <a href="Doctors.html" class="nav-link">Doctors</a>
+            </li>
+            <li class="nav-item">
+               <a href="Appointment.html" class="nav-link">Appointments</a>
+            </li>
+            <li class="nav-item">
+               <a href="Admin.html" class="nav-link">Admin login</a>
+            </li>
+            <li class="nav-item">
+               <a href="Contacts.html" class="nav-link">Contact us</a>
+            </li>
+         </ul>
+      
+      </div>
+         
+      
+      </div>
+    </nav>
+  <!-- Departments Section -->
+<section id="departments" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 text-success fw-bold">Our Main Departments</h2>
+    <div class="row g-4">
+      <!-- Department Card -->
+      <div class="col-md-4">
+        <div class="department-card p-4 border rounded shadow-sm bg-white text-center">
+          <h5 class="fw-bold text-success mb-2">Emergency Care</h5>
+          <p class="text-muted mb-1">Head: Dr. Sarah Mwangi</p>
+          <p class="text-muted">Contact: +254 712 345 678</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="department-card p-4 border rounded shadow-sm bg-white text-center">
+          <h5 class="fw-bold text-success mb-2">Outpatient Services</h5>
+          <p class="text-muted mb-1">Head: Dr. James Kariuki</p>
+          <p class="text-muted">Contact: +254 722 654 321</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="department-card p-4 border rounded shadow-sm bg-white text-center">
+          <h5 class="fw-bold text-success mb-2">Maternity & Child Care</h5>
+          <p class="text-muted mb-1">Head: Dr. Anne Njeri</p>
+          <p class="text-muted">Contact: +254 733 111 222</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="department-card p-4 border rounded shadow-sm bg-white text-center">
+          <h5 class="fw-bold text-success mb-2">Laboratory & Diagnostics</h5>
+          <p class="text-muted mb-1">Head: Dr. Victor Ochieng</p>
+          <p class="text-muted">Contact: +254 700 456 789</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="department-card p-4 border rounded shadow-sm bg-white text-center">
+          <h5 class="fw-bold text-success mb-2">Pharmacy</h5>
+          <p class="text-muted mb-1">Head: Ms. Mercy Wambui</p>
+          <p class="text-muted">Contact: +254 701 222 333</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="department-card p-4 border rounded shadow-sm bg-white text-center">
+          <h5 class="fw-bold text-success mb-2">Surgery Unit</h5>
+          <p class="text-muted mb-1">Head: Dr. Brian Otieno</p>
+          <p class="text-muted">Contact: +254 710 555 777</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hover Animation CSS -->
+<style>
+.department-card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.department-card:hover {
+  background-color: #198754; /* Bootstrap success color */
+  color: #fff;
+  transform: scale(1.03);
+}
+.department-card:hover h5,
+.department-card:hover p {
+  color: #fff !important;
+}
+</style>
+
+<section class="bg-success-subtle text-dark py-5">
+  <div class="container">
+    <div class="row align-items-start justify-content-between">
+
+      
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="d-flex align-items-center mb-3">
+          <img src="Arian_logo.png" alt="Arian Hospital Logo" width="70" height="70" >
+          <h4 class="fw-bold text-success mb-0">Arian Hospital</h4>
+        </div>
+        <p class="fst-italic text-muted">“Your health, our priority.”</p>
+        <a href="Appointment.html" class="btn btn-success mt-3">Book an Appointment</a>
+      </div>
+
+      
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="fw-bold text-success mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html" class="text-decoration-none text-dark d-block mb-1">🏠 Home</a>
+         </li>
+          <li>
+            <a href="about.html" class="text-decoration-none text-dark d-block mb-1">ℹ️ About Us</a>
+         </li>
+          <li>
+            <a href="services.html" class="text-decoration-none text-dark d-block mb-1">🩺 Services</a>
+         </li>
+          <li>
+            <a href="Departments.html" class="text-decoration-none text-dark d-block mb-1">🏥 Departments</a>
+         </li>
+          <li>
+            <a href="Doctors.html" class="text-decoration-none text-dark d-block mb-1">👨‍⚕️ Doctors</a>
+         </li>
+          <li>
+            <a href="Appointment.html" class="text-decoration-none text-dark d-block mb-1">📅 Appointments</a>
+         </li>
+          <li>
+            <a href="Contacts.html" class="text-decoration-none text-dark d-block">📞 Contact Us</a>
+         </li>
+        </ul>
+      </div>
+
+      
+      <div class="col-md-4">
+        <h5 class="fw-bold text-success mb-3">Contact Information</h5>
+        <p><i class="bi bi-telephone-fill text-success me-2"></i> +254 05 197 012</p>
+        <p><i class="bi bi-envelope-fill text-success me-2"></i> info@arianhospital.com</p>
+        <p><i class="bi bi-geo-alt-fill text-success me-2"></i> Kirinyaga, Kenya</p>
+        <p><i class="bi bi-clock-fill text-success me-2"></i> Mon–Sat: 8:00 AM – 6:00 PM</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-success text-white text-center text-md-start py-3 mt-4 position-relative">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+      <p class="mb-0">&copy; 2025 Arian Hospital. All rights reserved.</p>
+      <p class="mb-0 small position-md-absolute bottom-0 end-0 me-md-3">
+        Created by <span class="fw-bold text-light">Anita Muthike</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
